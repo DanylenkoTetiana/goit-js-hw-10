@@ -8,6 +8,6 @@ inputEl.style.borderColor = 'blue';
 inputEl.style.margin = '15px';
 console.log(document.body);
 document.body.style.background = 'url(./image/photo.jpg)';
-inputEl.style.backgroundImage = 'url(/image/background.jpg)';
+inputEl.style.backgroundImage = 'url(/image/photo.jpg)';
 // document.body.style.background =
 //   '#fff url(https://image.ibb.co/mjdbZ5/bg5.jpg) no-repeat center';
