@@ -13,8 +13,7 @@ document.body.style.backgroundImage =
 inputEl.addEventListener(
   'input',
   _.debounce(() => {
-    fetchCountries(inputEl.value);
     console.log(fetchCountries(inputEl.value));
-  }),
-  300
+    fetchCountries(inputEl.value);
+  }, 10300)
 );
