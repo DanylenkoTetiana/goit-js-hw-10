@@ -1,2 +1,0 @@
-document.querySelector("#search-box");const e=e=>fetch(`https://restcountries.com/v3.1/name/${e}`).then((e=>e.json())).then((e=>{console.log(e)})),o=document.querySelector("#search-box");o.style.border="#696969 solid 3px",o.style.margin="15px",console.log(o.value),document.body.style.backgroundImage="url(https://st.depositphotos.com/2016341/2010/i/450/depositphotos_20105595-stock-photo-white-grunge-brick-wall-background.jpg)",o.addEventListener("input",_.debounce((()=>{console.log(e(o.value)),e(o.value)}),10300));
-//# sourceMappingURL=index.269b9c77.js.map
