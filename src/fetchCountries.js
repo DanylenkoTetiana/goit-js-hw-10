@@ -1,10 +1,14 @@
 'use strict';
-const inputEl = document.querySelector('#search-box');
-export const fetchCountries = name =>
-  fetch(`https://restcountries.com/v3.1/name/${name}`)
-    .then(response => {
-      return response.json();
-    })
-    .then(country => {
-      console.log(country);
-    });
+
+export const fetchCountries = name => {
+  return fetch(
+    `https://restcountries.com/v3.1/name/${document
+      .querySelector('#search-box')
+      .value.trim()}?fields=name,capital,population,flags,languages`
+  ).then(response => {
+    if (!response.ok) {
+      throw new Error(response.status);
+    }
+    return response.json();
+  });
+};
